@@ -12,7 +12,7 @@ BuildRequires:	pkgconfig(gssdp-1.0) >= 0.10
 BuildRequires:	pkgconfig(gupnp-1.0) >= 0.13
 BuildRequires:	pkgconfig(gupnp-av-1.0) >= 0.5.5
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
-BuildRequires:	pkgconfig(gtksourceview-3.0) >= 3.0.0
+BuildRequires:	gtksourceview-3.0-devel
 BuildRequires:	pkgconfig(gnome-icon-theme) >= 2.20
 
 %description
