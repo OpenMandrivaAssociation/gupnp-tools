@@ -43,3 +43,12 @@ DimmableLight v1.0 implementation.
 %{_bindir}/gupnp-av-cp
 %{_bindir}/gupnp-upload
 %{_datadir}/applications/gupnp-*.desktop
+
+
+%changelog
+* Sat May 05 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.8.4-1
++ Revision: 796743
+- BR: pkgconfig(gtksourceview-3.0)
+- BR: gtksourceview-3.0-devel
+- imported package gupnp-tools
+
