@@ -7,7 +7,7 @@ Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
 License:	GPLv2+
 URL:		http://www.gupnp.org/
-Source0:	http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gssdp-1.0) >= 0.10
 BuildRequires:	pkgconfig(gupnp-1.0) >= 0.13
 BuildRequires:	pkgconfig(gupnp-av-1.0) >= 0.5.5
