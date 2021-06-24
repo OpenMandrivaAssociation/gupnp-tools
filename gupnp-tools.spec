@@ -37,7 +37,7 @@ DimmableLight v1.0 implementation.
 %meson_install
 
 %files
-%doc AUTHORS README
+%doc AUTHORS README.md
 %{_datadir}/%{name}
 %{_bindir}/gssdp-discover
 %{_bindir}/gupnp-network-light
