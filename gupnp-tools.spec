@@ -36,7 +36,9 @@ DimmableLight v1.0 implementation.
 %install
 %meson_install
 
-%files
+%find_lang %{name}
+
+%files -f %{name}.lang
 %doc AUTHORS README.md
 %{_datadir}/%{name}
 %{_bindir}/gssdp-discover
@@ -45,4 +47,4 @@ DimmableLight v1.0 implementation.
 %{_bindir}/gupnp-av-cp
 %{_bindir}/gupnp-upload
 %{_datadir}/applications/gupnp-*.desktop
-
+%{_iconsdir}/hicolor/*/apps/*.png
