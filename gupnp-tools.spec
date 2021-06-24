@@ -1,19 +1,20 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gupnp-tools
-Version:	0.8.5
-Release:	2
+Version:	0.10.1
+Release:	1
 Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
 License:	GPLv2+
 URL:		http://www.gupnp.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-BuildRequires:	pkgconfig(gssdp-1.0) >= 0.10
-BuildRequires:	pkgconfig(gupnp-1.0) >= 0.13
-BuildRequires:	pkgconfig(gupnp-av-1.0) >= 0.5.5
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
+BuildRequires:  meson
+BuildRequires:	pkgconfig(gssdp-1.0)
+BuildRequires:	pkgconfig(gupnp-1.0)
+BuildRequires:	pkgconfig(gupnp-av-1.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(gtksourceview-3.0)
-BuildRequires:	pkgconfig(gnome-icon-theme) >= 2.20
+BuildRequires:	pkgconfig(gnome-icon-theme)
 
 %description
 GUPnP is an object-oriented open source framework for creating UPnP 
@@ -25,14 +26,14 @@ It features a universal control point application as well as a sample
 DimmableLight v1.0 implementation. 
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x --disable-static
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_nstall
 
 %files
 %doc AUTHORS README
