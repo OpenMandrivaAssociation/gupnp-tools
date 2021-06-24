@@ -34,7 +34,7 @@ DimmableLight v1.0 implementation.
 %meson_build
 
 %install
-%meson_nstall
+%meson_install
 
 %files
 %doc AUTHORS README
