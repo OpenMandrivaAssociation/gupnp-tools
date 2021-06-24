@@ -8,6 +8,7 @@ Group:		Development/Other
 License:	GPLv2+
 URL:		http://www.gupnp.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch0:   fix-build-str-fmt.patch
 BuildRequires:  meson
 BuildRequires:	pkgconfig(gssdp-1.2)
 BuildRequires:	pkgconfig(gupnp-1.2)
