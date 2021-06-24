@@ -1,0 +1,13 @@
+diff --git a/src/universal-cp/main.c b/src/universal-cp/main.c
+index b6557c8..2825dc0 100644
+--- a/src/universal-cp/main.c
++++ b/src/universal-cp/main.c
+@@ -74,7 +74,7 @@ parse_uda_version (const gchar *option_name,
+                 g_set_error (error,
+                              G_IO_ERROR,
+                              G_IO_ERROR_INVALID_ARGUMENT,
+-                             msg);
++                             "%s", msg);
+                 g_free (msg);
+ 
+                 return FALSE;
