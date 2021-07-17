@@ -2,7 +2,7 @@
 
 Name:		gupnp-tools
 Version:	0.10.1
-Release:	1
+Release:	2
 Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
 License:	GPLv2+
