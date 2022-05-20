@@ -1,7 +1,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gupnp-tools
-Version:	0.10.2
+Version:	0.10.3
 Release:	1
 Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
