@@ -1,7 +1,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gupnp-tools
-Version:	0.10.3
+Version:	0.12.0
 Release:	1
 Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
@@ -10,11 +10,11 @@ URL:		http://www.gupnp.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 #Patch0:   fix-build-str-fmt.patch
 BuildRequires:  meson
-BuildRequires:	pkgconfig(gssdp-1.2)
-BuildRequires:	pkgconfig(gupnp-1.2)
+BuildRequires:	pkgconfig(gssdp-1.6)
+BuildRequires:	pkgconfig(gupnp-1.6)
 BuildRequires:	pkgconfig(gupnp-av-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(gtksourceview-3.0)
+BuildRequires:	pkgconfig(gtksourceview-4)
 BuildRequires:	pkgconfig(gnome-icon-theme)
 
 %description
@@ -46,5 +46,6 @@ DimmableLight v1.0 implementation.
 %{_bindir}/gupnp-universal-cp
 %{_bindir}/gupnp-av-cp
 %{_bindir}/gupnp-upload
+%{_bindir}/gupnp-event-dumper
 %{_datadir}/applications/gupnp-*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
