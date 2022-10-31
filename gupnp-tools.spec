@@ -14,7 +14,7 @@ BuildRequires:	pkgconfig(gssdp-1.6)
 BuildRequires:	pkgconfig(gupnp-1.6)
 BuildRequires:	pkgconfig(gupnp-av-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(gtksourceview-3.0)
+BuildRequires:	pkgconfig(gtksourceview-4)
 BuildRequires:	pkgconfig(gnome-icon-theme)
 
 %description
