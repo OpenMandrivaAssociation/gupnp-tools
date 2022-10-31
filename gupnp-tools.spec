@@ -46,5 +46,6 @@ DimmableLight v1.0 implementation.
 %{_bindir}/gupnp-universal-cp
 %{_bindir}/gupnp-av-cp
 %{_bindir}/gupnp-upload
+%{_bindir}/gupnp-event-dumper
 %{_datadir}/applications/gupnp-*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
