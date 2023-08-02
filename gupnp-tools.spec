@@ -1,3 +1,6 @@
+%global optflags %{optflags} -Wno-error -Wno-deprecated-declarations
+
+
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gupnp-tools
