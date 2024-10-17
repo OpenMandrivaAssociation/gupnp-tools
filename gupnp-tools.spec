@@ -9,7 +9,7 @@ Release:	1
 Summary:	A collection of dev tools utilizing GUPnP and GTK+
 Group:		Development/Other
 License:	GPLv2+
-URL:		http://www.gupnp.org/
+URL:		https://www.gupnp.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 #Patch0:   fix-build-str-fmt.patch
 BuildRequires:  meson
